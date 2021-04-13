@@ -15,7 +15,7 @@ library(skimr)
 ```
 
 ## Question 1 
-This question will use the OJ data set and an SVM with a polynomial kernel for classification.
+This question will use the OJ data set and a SVM with a polynomial kernel for classification.
 
 a. Using skim, from the skimr package, quickly survey the data to determine types of data. 
      i. Are there any factors-levels that occur very infrequently?
@@ -25,7 +25,7 @@ a. Using skim, from the skimr package, quickly survey the data to determine type
    v. Are there any variables that have zero variability?
 b. Split the data into a training set and a test set.
 c. Fit a polynomial SVM to the training set using Purchase as the response and all the other variables as predictors (features). Tune via cost and degree.
-d. Predict the values in the testing set and save the area under the ROC Curve.
+d. Predict the values of Purchase in the testing set and print the area under the ROC Curve.
 e. Create a confusion matrix for your results.
 f. Plot the ROC curve. 
 
@@ -45,8 +45,8 @@ OJ_data <- ISLR::OJ
 ## Question 2 
 This question will use the OJ data set and an SVM with a radial basis function kernel for classification.
 
-a. Repeat items c-f from question 1, but this time use a radial kernel. Tune using just cost and rbf_sigma.
-b. Compare your results to your results in Question 1. Which kernel performed the best?
+a. Repeat items c-f from question 1, but this time use a radial kernel. Tune using cost and rbf_sigma.
+b. Compare your results to your results in Question 1. Which kernel performs the best?
 
 
 ### Answer
@@ -58,11 +58,11 @@ b. Compare your results to your results in Question 1. Which kernel performed th
 
 ## Bonus
 Plot the decision boundaries for Questions 1 and 2 with respect to PriceCM and PriceMM. 
-You'll either have to figure out how to use slice in the kernlab plot (I'm still working on figuring it out myself). Or plot the boundary using a grid and predict.
+You'll either have to figure out how to use slice in the kernlab plot (I'm still working on figuring it out myself), or plot the boundary using a grid and predict.
 
 ### Answer
 
-```{r Q2}
+```{r Bonus}
 
 
 ```
